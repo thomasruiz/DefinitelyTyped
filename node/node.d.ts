@@ -510,7 +510,7 @@ interface NodeBuffer extends Uint8Array {
     writeFloatBE(value: number, offset: number, noAssert?: boolean): number;
     writeDoubleLE(value: number, offset: number, noAssert?: boolean): number;
     writeDoubleBE(value: number, offset: number, noAssert?: boolean): number;
-    fill(value: any, offset?: number, end?: number): this;
+    fill(value: number, start?: number, end?: number): Buffer;
     indexOf(value: string | number | Buffer, byteOffset?: number, encoding?: string): number;
     lastIndexOf(value: string | number | Buffer, byteOffset?: number, encoding?: string): number;
     entries(): IterableIterator<[number, number]>;
